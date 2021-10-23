@@ -150,3 +150,29 @@ border-bottom-width: 1px  ;
 border-color: rgba(0, 255, 255, 0.562);
 
   }
+/* services */
+  
+.card {
+  border-width: 0 !important;
+}
+
+.overlay-text {
+    padding: 0!important;
+    background-color: #ffffff34;
+    backdrop-filter: blur(5px);
+height: 50%;
+position: absolute;
+    top: 50%;
+}
+.card img {
+  position: relative;
+}
+.overlay-text p {
+  font-size: 12px ;
+}
+
+.card-img-overlay {
+   padding: 0 !important;
+}
+.overlay-text i {
+  color: #ffbb00;
