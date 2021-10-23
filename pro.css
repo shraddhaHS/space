@@ -24,7 +24,7 @@ body {
    
 }
 
-.about .des {
+.about , .des {
     font-family: oren;
     font-weight: bold;
    
