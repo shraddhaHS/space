@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: oren;
     src: url(Orenburg.ttf);
@@ -20,15 +21,10 @@
 }
 body {
     font-family: din;
-    background-color: #ffffff;
-   
+ background-color: white;
 }
 
-.about , .des {
-    font-family: oren;
-    font-weight: bold;
-   
-}
+
 .logo {
    
     font-size: 30px;
@@ -74,10 +70,11 @@ transition: ease-in-out 0.3s;
 }
 video {
     display: block;
+    min-height: 100vh;
 }
 .bg {
     width: 100%;
-    
+    height: 100%;
    object-fit: contain; 
    display: grid;
    
@@ -93,54 +90,15 @@ video {
 }
 
 
-  @media only screen and (max-width:600px){
-.text-end p {
-    font-size: 1.5em;
-}
+
   
-.typing-ani {
-    width: 15vw;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden ;
-    border-right: 3px solid;
-    font-size: 30px;
-   font-family: oren;
+
   
-     
-  }   
-  }
-  
-  .typing-ani {
-    width: 30vw;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    
-   font-family: oren;
-  
-     
-  }
-  .carousel-inner img {
-    width: 100%;
-    height: 100%;
-}
   .heading {
       font-family: oren;
       color: aqua;
   }
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
+
   .bg-dark-blue {
     background-color: #040C26;
   }
@@ -150,12 +108,47 @@ border-bottom-width: 1px  ;
 border-color: rgba(0, 255, 255, 0.562);
 
   }
-/* services */
-  
+  /* about us */
+  .about , .des {
+    font-family: oren;
+    font-weight: bold;
+
+   
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+  /* services */
+.form-select {
+  border-top-width: 0;
+  border-right-width: 1px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-radius: 0%;
+ 
+}
+.booking {
+  min-height: 80vh;
+  max-height: 100vh;
+}
 .card {
   border-width: 0 !important;
 }
-
+.p-25{
+  padding: 2.3rem 0;
+}
+.p-26 {
+  padding: 2.4rem 4rem;
+}
+.bg-white {
+  opacity: 90%;
+  backdrop-filter: blur(8px);
+}
+.oren {
+  font-family: oren;
+}
 .overlay-text {
     padding: 0!important;
     background-color: #ffffff34;
@@ -176,3 +169,47 @@ position: absolute;
 }
 .overlay-text i {
   color: #ffbb00;
+}
+.center-text {
+  color: aqua;
+  font-family: acquire;
+  font-size: 40px;
+  font-weight: bold;
+}
+.bg-aqua {
+  background-color: aqua;
+color: white;
+  font-weight: bold;
+}
+/* asnimation  */
+.glow {
+ 
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua, 0 0 50px aqua, 0 0 60px aqua, 0 0 70px aqua;
+  }
+  to {
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.562), 0 0 30px rgba(0, 255, 255, 0.562), 0 0 40px rgba(0, 255, 255, 0.562), 0 0 50px rgba(0, 255, 255, 0.562), 0 0 60px rgba(0, 255, 255, 0.562), 0 0 70px rgba(0, 255, 255, 0.562), 0 0 80px rgba(0, 255, 255, 0.562);
+  }
+}
+ select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.btn-outline-aqua {
+  border-color: aqua;
+
+}
+.btn-outline-aqua:hover {
+  border-color: aqua;
+transform: scaleX(1.2);
+transition: ease-in-out 0.3s;
+color: rgb(183, 247, 247) !important
+}
