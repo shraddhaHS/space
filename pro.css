@@ -89,7 +89,16 @@ video {
     color: #7683A9;
 }
 
-
+.btn-aqua {
+background-color: rgb(70, 247, 247);
+color: white;
+}
+.btn-aqua:hover {
+background-color: aqua;
+color: black;
+transform: scaleX(1.2);
+transition: ease-in-out 0.3s;
+}
 
   
 
@@ -115,7 +124,13 @@ border-color: rgba(0, 255, 255, 0.562);
 
    
 }
-
+.travel {
+  width: 100vw;
+  height: 100vh;
+}
+.modal-backdrop {
+  position:unset !important;
+}
 .carousel-inner img {
   width: 100%;
   height: 100%;
@@ -148,6 +163,9 @@ border-color: rgba(0, 255, 255, 0.562);
 }
 .oren {
   font-family: oren;
+}
+ option {
+  font-family: din;
 }
 .overlay-text {
     padding: 0!important;
@@ -199,6 +217,28 @@ color: white;
     text-shadow: 0 0 20px rgba(0, 255, 255, 0.562), 0 0 30px rgba(0, 255, 255, 0.562), 0 0 40px rgba(0, 255, 255, 0.562), 0 0 50px rgba(0, 255, 255, 0.562), 0 0 60px rgba(0, 255, 255, 0.562), 0 0 70px rgba(0, 255, 255, 0.562), 0 0 80px rgba(0, 255, 255, 0.562);
   }
 }
+.typing-ani {
+  width: 30vw;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  
+ font-family: oren;
+
+   
+}
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
  select:focus {
   outline: none !important;
   box-shadow: none !important;
@@ -212,4 +252,58 @@ color: white;
 transform: scaleX(1.2);
 transition: ease-in-out 0.3s;
 color: rgb(183, 247, 247) !important
+}
+.modal {
+  font-family: din;
+}
+/* contact-us */
+  
+.image {
+  background-image: url(aircraft-78060.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+} 
+.image h1 {
+  font-weight: 900 !important;
+ font-family: 'Times New Roman', Times, serif;
+}
+
+/* contact us */
+
+.contact-form{
+  background: #fff;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 70%;
+ 
+  padding: 10px;
+  box-shadow: 5px 10px 20px #CA315C inset;
+}
+.contact-form .form-control{
+  border-radius:1rem;
+}
+
+.contact-image img{
+  border-radius: 6rem;
+  width: 11%;
+margin-top: 5%;
+  transform: rotate(29deg);
+}
+.contact-form form{
+  padding: 14%;
+}
+.contact-form form .row{
+  margin-bottom: -7%;
+}
+.contact-form h3{
+  margin-bottom: 8%;
+  margin-top: -15%;
+  text-align: center;
+  color: #EF775F;
+}
+
+
+.rounded-pill {
+  border-radius: 35px;
 }
